@@ -1,9 +1,9 @@
-pub struct Frames<'a> {
-    pub data: Vec<&'a str>,
+pub struct Frames {
+    pub data: Vec<&'static str>,
 }
 
 
-impl<'a> Frames<'a> {
+impl Frames  {
     pub fn new() -> Self {
         Self {
             data: vec![

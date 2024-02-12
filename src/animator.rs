@@ -1,11 +1,11 @@
 use std::{thread, time::Duration};
 
-pub struct Animator<'a> {
-    pub frames: Vec<&'a str>,
+pub struct Animator {
+    pub frames: Vec<&'static str>,
 }
 
-impl<'a> Animator<'a> {
-    pub fn new(frames: Vec<&'a str>) -> Self {
+impl Animator {
+    pub fn new(frames: Vec<&'static str>) -> Self {
         Self { frames }
     }
 
